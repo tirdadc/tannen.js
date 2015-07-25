@@ -1,0 +1,79 @@
+$calendar-border-color: #e0e1e2;
+$out-of-range-date-color: grey;
+
+$event-color: white;
+
+.calendar {
+  .top {
+    margin-bottom: 1em;
+    display: flex;
+    div {
+      display: inline-block;
+    }
+    .previous, .next, .reset {
+      cursor: pointer;
+    }
+    .next, .reset {
+      margin-left: 1em;
+    }
+    .label {
+      float: right;
+      font-size: 2em;
+      margin-left: auto;
+      .year {
+
+      }
+      .month {
+        font-weight: bold;
+        margin-right: 0.25em;
+      }
+    }
+  }
+  .events {
+    color: $event-color;
+    .event {
+      padding: 0.25em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    a {
+      color: $event-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .month {
+    .day {
+      border-color: $calendar-border-color;
+      border-style: solid;
+      border-width: 0;
+      border-bottom-width: 1px;
+      border-right-width: 1px;
+      min-height: 3em;
+      &.first {
+        border-left-width: 1px;
+      }
+    }
+  }
+  .week {
+    display: flex;
+    &.header {
+      font-weight: bold;
+      border-bottom: 1px $calendar-border-color solid;
+    }
+  }
+  .day {
+    min-width: 40px;
+    width: 14.5%;
+    float: left;
+
+    &.other_month {
+      color: $out-of-range-date-color;
+    }
+    &.today {
+      font-weight: bold;
+    }
+  }
+}
