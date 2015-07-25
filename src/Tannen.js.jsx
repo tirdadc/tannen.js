@@ -1,3 +1,8 @@
+var React = require('react');
+var moment = require('moment');
+var TannenWeekdays = require('./TannenWeekdays');
+var TannenMonth = require('./TannenMonth');
+
 var Tannen = React.createClass({
   propTypes: {
     width:                    React.PropTypes.any,

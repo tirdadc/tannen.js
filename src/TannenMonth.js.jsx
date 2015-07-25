@@ -1,3 +1,5 @@
+var TannenEvents = require('./TannenEvents');
+
 var TannenMonth = React.createClass({
   propTypes: {
     month:                    React.PropTypes.any,
