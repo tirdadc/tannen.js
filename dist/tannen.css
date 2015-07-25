@@ -1,0 +1,53 @@
+.calendar .top {
+  margin-bottom: 1em;
+  display: flex; }
+  .calendar .top div {
+    display: inline-block; }
+  .calendar .top .previous, .calendar .top .next, .calendar .top .reset {
+    cursor: pointer; }
+  .calendar .top .next, .calendar .top .reset {
+    margin-left: 1em; }
+  .calendar .top .label {
+    float: right;
+    font-size: 2em;
+    margin-left: auto; }
+    .calendar .top .label .month {
+      font-weight: bold;
+      margin-right: 0.25em; }
+
+.calendar .events {
+  color: white; }
+  .calendar .events .event {
+    padding: 0.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .calendar .events a {
+    color: white; }
+    .calendar .events a:hover {
+      text-decoration: underline; }
+
+.calendar .month .day {
+  border-color: #e0e1e2;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  min-height: 3em; }
+  .calendar .month .day.first {
+    border-left-width: 1px; }
+
+.calendar .week {
+  display: flex; }
+  .calendar .week.header {
+    font-weight: bold;
+    border-bottom: 1px #e0e1e2 solid; }
+
+.calendar .day {
+  min-width: 40px;
+  width: 14.5%;
+  float: left; }
+  .calendar .day.other_month {
+    color: grey; }
+  .calendar .day.today {
+    font-weight: bold; }
