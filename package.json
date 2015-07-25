@@ -1,0 +1,37 @@
+{
+  "name": "tannen.js",
+  "version": "0.0.1",
+  "description": "Responsive React.js event calendar",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tirdadc/tannen.js.git"
+  },
+  "keywords": [
+    "calendar",
+    "reactjs",
+    "react.js",
+    "events"
+  ],
+  "author": "tirdadc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tirdadc/tannen.js/issues"
+  },
+  "homepage": "https://github.com/tirdadc/tannen.js",
+  "devDependencies": {
+    "webpack": "^1.10.3"
+  },
+  "dependencies": {
+    "react": "^0.13.3",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
