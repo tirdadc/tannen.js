@@ -4,8 +4,8 @@ Responsive React.js event calendar
 ![alt tag](tannen.png)
 
 ## Dependencies
-[React.js](https://github.com/facebook/react)
-[moment](https://github.com/moment/moment/)
+- [React.js](https://github.com/facebook/react)
+- [moment](https://github.com/moment/moment/)
 
 are both considered external dependencies, so they are not packed/distributed within this component set, but must be included in your setup.
 
@@ -16,7 +16,7 @@ are both considered external dependencies, so they are not packed/distributed wi
 If you clone the project from Github, make sure you run `npm install` to get all the dependencies.
 
 ## Usage
-```
+``` javascript
 var React = require('react');
 var Tannen = require('tannen.js');
 
