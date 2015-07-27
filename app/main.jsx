@@ -3,6 +3,7 @@ var React = require('react')
 
 React.render(
   <Tannen
+    init_date='2015-07-01'
     events={[
       {
         start_date: '2015-07-22',

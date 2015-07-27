@@ -11,7 +11,8 @@ var Tannen = React.createClass({
     day_alignment:            React.PropTypes.string,
     previous_arrow:           React.PropTypes.string,
     next_arrow:               React.PropTypes.string,
-    events:                   React.PropTypes.array
+    events:                   React.PropTypes.array,
+    init_date:                React.PropTypes.string
   },
 
   getDefaultProps: function() {
@@ -33,7 +34,7 @@ var Tannen = React.createClass({
 
   getInitialState: function() {
     return {
-      month: moment()
+      month: this.props.init_date ? moment(this.props.init_date) : moment()
     };
   },
 
