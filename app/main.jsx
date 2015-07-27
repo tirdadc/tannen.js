@@ -1,5 +1,5 @@
 var React = require('react')
-  , Tannen = require('../dist/tannen.min.js');
+  , Tannen = require('../src/Tannen');
 
 React.render(
   <Tannen />,

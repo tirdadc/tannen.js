@@ -3,8 +3,8 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    example: path.resolve(__dirname, 'app/main'),
-    tannen: path.resolve(__dirname, 'src/Tannen.jsx'),
+    tannen: [path.resolve(__dirname, 'src/Tannen.jsx')],
+    example: path.resolve(__dirname, 'app/main')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
