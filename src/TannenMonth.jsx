@@ -13,7 +13,7 @@ var TannenMonth = React.createClass({
 
   setPopups: function () {
     // use Semantic UI popup if present
-    if (jQuery() && jQuery().popup) {
+    if (typeof jQuery !== 'undefined'  && jQuery().popup) {
       $('.event').popup({position: 'bottom left'});
     }
   },
