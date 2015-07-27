@@ -1,7 +1,7 @@
-var React = require('react');
-var moment = require('moment');
-var TannenWeekdays = require('./TannenWeekdays');
-var TannenMonth = require('./TannenMonth');
+var React = require('react')
+  , moment = require('moment')
+  , TannenWeekdays = require('./TannenWeekdays')
+  , TannenMonth = require('./TannenMonth');
 require("../stylesheets/tannen.css.scss");
 
 var Tannen = React.createClass({
