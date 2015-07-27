@@ -35,3 +35,5 @@ var TannenEvents = React.createClass({
     )
   }
 })
+
+module.exports = TannenEvents;

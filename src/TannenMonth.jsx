@@ -95,3 +95,5 @@ var TannenMonth = React.createClass({
     )
   }
 })
+
+module.exports = TannenMonth;

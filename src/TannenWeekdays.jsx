@@ -23,3 +23,5 @@ var TannenWeekdays = React.createClass({
     )
   }
 })
+
+module.exports = TannenWeekdays;

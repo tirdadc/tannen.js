@@ -89,3 +89,5 @@ var Tannen = React.createClass({
     )
   }
 })
+
+module.exports = Tannen;
