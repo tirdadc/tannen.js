@@ -1,5 +1,5 @@
-var React = require('react');
-var Tannen = require('../src/Tannen');
+var React = require('react')
+  , Tannen = require('../dist/tannen.min.js');
 
 React.render(
   <Tannen />,

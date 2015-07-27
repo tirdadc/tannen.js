@@ -1,13 +1,22 @@
-var path = require('path');
+var path = require('path')
+  , webpack = require('webpack');
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, 'app/main'),
+    example: path.resolve(__dirname, 'app/main'),
+    tannen: path.resolve(__dirname, 'src/Tannen.jsx'),
   },
   output: {
-    path: path.resolve(__dirname, 'example'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].min.js'
   },
+  plugins: [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({minimize: true}),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
   module: {
     loaders: [
       {
