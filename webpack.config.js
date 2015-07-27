@@ -2,10 +2,12 @@ var path = require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: path.resolve(__dirname, 'stylesheets/tannen.css.scss'),
+  entry: {
+    main: path.resolve(__dirname, 'app/main'),
+  },
   output: {
-    path: 'dist',
-    filename: 'tannen.css'
+    path: path.resolve(__dirname, 'example'),
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
@@ -22,7 +24,11 @@ module.exports = {
       },
     ]
   },
-  plugins: [
-    new ExtractTextPlugin("tannen.css")
-  ]
+  externals: {
+    'react': 'React',
+    'moment': 'moment'
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  },
 };

@@ -1,3 +1,6 @@
+var React = require('react');
+var moment = require('moment');
+
 var TannenWeekdays = React.createClass({
   render: function() {
     var weekdays = [];

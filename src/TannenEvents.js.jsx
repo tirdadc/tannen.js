@@ -1,3 +1,5 @@
+var React = require('react');
+
 var TannenEvents = React.createClass({
   propTypes: {
     events:                    React.PropTypes.array,

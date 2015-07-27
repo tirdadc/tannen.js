@@ -1,3 +1,5 @@
+var React = require('react');
+var moment = require('moment');
 var TannenEvents = require('./TannenEvents');
 
 var TannenMonth = React.createClass({
