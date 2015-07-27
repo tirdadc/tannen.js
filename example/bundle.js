@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	console.info('main.js');
-	var Tannen = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Tannen\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var Tannen = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../src/Tannen\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 
 /***/ }
