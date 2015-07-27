@@ -12,7 +12,7 @@ module.exports = {
     loaders: [
       {
         test: /\.scss$/,
-        loader: "css!sass"
+        loader: "style!css!sass"
       },
       {
         test: /\.jsx$/,
