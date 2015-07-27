@@ -23,6 +23,11 @@ React.render(
         start_date: '2015-07-24',
         end_date: '2015-07-27',
         title: 'Borrow DeLorean'
+      },
+      {
+        start_date: '2015-07-25',
+        end_date: '2015-07-25',
+        title: 'Bully Marty McFly'
       }
     ]}/>,
   document.getElementById('tannen-example')
