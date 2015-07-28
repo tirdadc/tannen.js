@@ -64,7 +64,7 @@ events | array | null | list of events that will populate the calendar
 |width|string|'100%'|width of the component|
 |previous_label|string|'&#9664;'|HTML for the previous month link|
 |next_label|string|'&#9654;'|HTML for the next month link|
-|event_colors|array|['#1678c2','#16ab39','#fbbd08','#2185d0','#6435c9']|list of colors to cycle through for events|
+|event_colors|array|['#1678c2',<br/>'#16ab39',<br/>'#fbbd08',<br/>'#2185d0',<br/>'#6435c9']|list of colors to cycle through for events|
 |weekdays_alignment|string|'center'|header text alignment|
 |day_alignment|string|'right'|calendar day text alignment|
 
