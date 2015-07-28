@@ -8,7 +8,9 @@ React.render(
       {
         start_date: '2015-07-22',
         end_date: '2015-07-28',
-        title: 'Bully George McFly'
+        title: 'Bully George McFly',
+        description: 'This will show up in a tooltip if a library like Semantic UI is detected.',
+        url: 'http://www.example.com'
       },
       {
         start_date: '2015-07-24',
