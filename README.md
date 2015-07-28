@@ -57,10 +57,10 @@ React.render(
 ## Settings
 A number of settings can be controlled through the props:
 
-|Prop name|type|initial Value|Description|
-|---|---|---|
-|init_date|string|today|day to initialize the calendar on in string format (ex: 2015-07-31)|
-|events|array|null|list of events that will populate the calendar|
+Prop name | type | initial Value | Description
+--------- | ---- | ------------- | -----------
+init_date | string | today | day to initialize the calendar on in string format (ex: 2015-07-31).
+events | array | null | list of events that will populate the calendar
 |width|string|'100%'|width of the component|
 |previous_label|string|'&#9664;'|HTML for the previous month link|
 |next_label|string|'&#9654;'|HTML for the next month link|
