@@ -33,9 +33,6 @@ $event-color: white;
     color: $event-color;
     .event {
       padding: 0.25em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     a {
       color: $event-color;
@@ -74,6 +71,14 @@ $event-color: white;
     }
     &.today {
       font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .calendar {
+    .events {
+      font-size: 0.8em;
     }
   }
 }
