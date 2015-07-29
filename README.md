@@ -1,5 +1,5 @@
 # tannen.js
-Responsive React.js event calendar
+Responsive React.js event calendar ([Demo](http://tirdadc.github.io/tannen.js/))
 
 ![alt tag](tannen.png)
 
