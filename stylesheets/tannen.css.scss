@@ -10,19 +10,27 @@ $event-color: white;
     div {
       display: inline-block;
     }
-    .previous, .next, .reset {
+    .previous, .next, .reset, .switch_view_mode {
+      line-height: 2em;
       cursor: pointer;
     }
-    .next, .reset {
+    .next, .reset, .switch_view_mode {
       margin-left: 1em;
     }
+    .switch_view_mode {
+      text-transform: capitalize;
+      &:before {
+        content: '[';
+      }
+      &:after {
+        content: ']';
+      }
+    }
+
     .label {
       float: right;
       font-size: 2em;
       margin-left: auto;
-      .year {
-
-      }
       .month {
         font-weight: bold;
         margin-right: 0.25em;

@@ -35,3 +35,18 @@ React.render(
     ]}/>,
   document.getElementById('tannen-example')
 );
+
+React.render(
+  <Tannen
+    init_date='1958-03-26'
+    view_mode='week'
+    view_mode_switch={false}
+    events={[
+      {
+        start_date: '1958-03-26',
+        end_date: '1958-03-26',
+        title: 'Get Grays Sports Almanac'
+      }
+    ]}/>,
+  document.getElementById('tannen-example2')
+);

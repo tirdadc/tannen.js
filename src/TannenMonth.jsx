@@ -8,7 +8,8 @@ var TannenMonth = React.createClass({
     day_alignment:            React.PropTypes.string,
     day_margin_bottom:        React.PropTypes.string,
     colors:                   React.PropTypes.array,
-    events:                   React.PropTypes.array
+    events:                   React.PropTypes.array,
+    view_mode:                React.PropTypes.string
   },
 
   setPopups: function () {
@@ -27,10 +28,16 @@ var TannenMonth = React.createClass({
   },
 
   render: function() {
-    var first_day = this.props.month.clone().startOf('month').startOf('week');
-    var last_day = this.props.month.clone().endOf('month').endOf('week');
+    if (this.props.view_mode == 'month') {
+      var first_day = this.props.month.clone().startOf('month').startOf('week');
+      var last_day = this.props.month.clone().endOf('month').endOf('week');
+    }
+    else {
+      var first_day = this.props.month.clone().startOf('week');
+      var last_day = first_day.clone().add(1, 'w');
+    }
+
     var current_day = first_day.clone();
-    var current_month = false;
     var weeks = [];
     var titles = [];
 
@@ -39,7 +46,6 @@ var TannenMonth = React.createClass({
 
       for (i = 0; i < 7; i++) {
         if (this.props.events) {
-          var current_day_formatted = current_day.format('YYYY-MM-DD');
           var events_for_current_day = [];
 
           for (j = 0; j < this.props.events.length; j++) {
