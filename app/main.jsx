@@ -38,7 +38,7 @@ React.render(
 
 React.render(
   <Tannen
-    init_date='1958-03-26'
+    init_date='1998-03-26'
     view_mode='week'
     view_mode_switch={false}
     events={[
