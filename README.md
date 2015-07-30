@@ -1,5 +1,5 @@
 # tannen.js
-Responsive React.js event calendar
+Responsive React.js event calendar ([Demo](http://tirdadc.github.io/tannen.js/))
 
 ![alt tag](tannen.png)
 
@@ -27,29 +27,29 @@ React.render(
       {
         start_date: '2015-07-22',
         end_date: '2015-07-28',
-        title: 'Bully George McFly',
+        title: 'Event A',
         description: 'This will show up in a tooltip if a library like Semantic UI is detected.',
         url: 'http://www.example.com'
       },
       {
         start_date: '2015-07-24',
         end_date: '2015-07-24',
-        title: 'Hang out at Cafe 80\'s'
+        title: 'Event B'
       },
       {
         start_date: '2015-07-05',
         end_date: '2015-07-10',
-        title: 'Recover almanac'
+        title: 'Event C'
       },
       {
         start_date: '2015-07-24',
         end_date: '2015-07-27',
-        title: 'Borrow DeLorean'
+        title: 'Event D'
       },
       {
         start_date: '2015-07-25',
         end_date: '2015-07-25',
-        title: 'Bully Marty McFly'
+        title: 'Event E'
       }
     ]}/>,
   document.getElementById('tannen-example')

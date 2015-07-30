@@ -8,29 +8,29 @@ React.render(
       {
         start_date: '2015-07-22',
         end_date: '2015-07-28',
-        title: 'Bully George McFly',
+        title: 'Event A',
         description: 'This will show up in a tooltip if a library like Semantic UI is detected.',
         url: 'http://www.example.com'
       },
       {
         start_date: '2015-07-24',
         end_date: '2015-07-24',
-        title: 'Hang out at Cafe 80\'s'
+        title: 'Event B'
       },
       {
         start_date: '2015-07-05',
         end_date: '2015-07-10',
-        title: 'Recover almanac'
+        title: 'Event C'
       },
       {
         start_date: '2015-07-24',
         end_date: '2015-07-27',
-        title: 'Borrow DeLorean'
+        title: 'Event D'
       },
       {
         start_date: '2015-07-25',
         end_date: '2015-07-25',
-        title: 'Bully Marty McFly'
+        title: 'Event E'
       }
     ]}/>,
   document.getElementById('tannen-example')
@@ -43,9 +43,9 @@ React.render(
     view_mode_switch={false}
     events={[
       {
-        start_date: '1958-03-26',
-        end_date: '1958-03-26',
-        title: 'Get Grays Sports Almanac'
+        start_date: '1998-03-26',
+        end_date: '1998-03-26',
+        title: 'Event F'
       }
     ]}/>,
   document.getElementById('tannen-example2')
