@@ -61,9 +61,9 @@ A number of settings can be controlled through the props:
 
 Prop name | type | initial Value | Description
 --------- | ---- | ------------- | -----------
-init_date | string | today | day to initialize the calendar on in string format (ex: 2015-07-31).
-view_mode | string | 'month' | can be set to either 'month' or 'week' to determine what view mode to initialize with.
-view_mode_switch | boolean | true | whether or not to display the view mode switch link.
+init_date | string | today | day to initialize the calendar on in string format (ex: 2015-07-31)
+view_mode | string | 'month' | can be set to either 'month' or 'week' to determine what view mode to initialize with
+view_mode_switch | boolean | true | whether or not to display the view mode switch link
 events | array | null | list of events that will populate the calendar
 |width|string|'100%'|width of the component|
 |previous_label|string|'&#9664;'|HTML for the previous month link|
@@ -71,6 +71,8 @@ events | array | null | list of events that will populate the calendar
 |event_colors|array|['#1678c2',<br/>'#16ab39',<br/>'#fbbd08',<br/>'#2185d0',<br/>'#6435c9']|list of colors to cycle through for events|
 |weekdays_alignment|string|'center'|header text alignment|
 |day_alignment|string|'right'|calendar day text alignment|
+|event_title|string|'title'|event property to use for the title|
+|event_content|string|'content'|event property to use for the tooltip|
 
 The rest can and should be overridden with CSS.
 

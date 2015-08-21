@@ -17,7 +17,9 @@ var Tannen = React.createClass({
     events:                   React.PropTypes.array,
     init_date:                React.PropTypes.string,
     view_mode:                React.PropTypes.string,
-    view_mode_switch:         React.PropTypes.bool
+    view_mode_switch:         React.PropTypes.bool,
+    event_title:              React.PropTypes.string,
+    event_content:            React.PropTypes.string
   },
 
   getDefaultProps: function() {
@@ -35,7 +37,9 @@ var Tannen = React.createClass({
         '#6435c9',
       ],
       view_mode: 'month',
-      view_mode_switch: true
+      view_mode_switch: true,
+      event_title: 'title',
+      event_content: 'content'
     };
   },
 
@@ -106,7 +110,9 @@ var Tannen = React.createClass({
           month={this.state.month}
           day_alignment={this.props.day_alignment}
           events={this.props.events}
-          colors={this.props.event_colors} />
+          colors={this.props.event_colors}
+          event_title={this.props.event_title}
+          event_content={this.props.event_content} />
       </div>
     )
   }

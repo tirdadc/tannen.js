@@ -9,7 +9,9 @@ var TannenMonth = React.createClass({
     day_margin_bottom:        React.PropTypes.string,
     colors:                   React.PropTypes.array,
     events:                   React.PropTypes.array,
-    view_mode:                React.PropTypes.string
+    view_mode:                React.PropTypes.string,
+    event_title:              React.PropTypes.string,
+    event_content:            React.PropTypes.string
   },
 
   setPopups: function () {
@@ -50,13 +52,14 @@ var TannenMonth = React.createClass({
 
           for (j = 0; j < this.props.events.length; j++) {
             var event = this.props.events[j];
+
             if (current_day.isBetween(moment(event.start_date).subtract(1, 'd'), moment(event.end_date).add(1, 'd'), 'day')) {
-              if (titles.indexOf(event.title) == -1) {
-                titles.push(event.title);
+              if (titles.indexOf(event[this.props.event_title]) == -1) {
+                titles.push(event[this.props.event_title]);
               }
               events_for_current_day.push({
-                title: event.title,
-                content: event.content,
+                title: event[this.props.event_title],
+                content: event[this.props.event_content],
                 url: event.url
               })
             }

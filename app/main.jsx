@@ -9,7 +9,7 @@ React.render(
         start_date: '2015-07-22',
         end_date: '2015-07-28',
         title: 'Event A',
-        description: 'This will show up in a tooltip if a library like Semantic UI is detected.',
+        content: 'This will show up in a tooltip if a library like Semantic UI is detected.',
         url: 'http://www.example.com'
       },
       {
