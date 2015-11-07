@@ -34,6 +34,9 @@ $event-color: white;
       .month {
         font-weight: bold;
         margin-right: 0.25em;
+        &.small {
+          display: none;
+        }
       }
     }
   }
@@ -87,6 +90,16 @@ $event-color: white;
   .calendar {
     .events {
       font-size: 0.8em;
+    }
+    .top {
+      .label {
+        .medium.month {
+          display: none;
+        }
+        .small.month {
+          display: inline;
+        }
+      }
     }
   }
 }

@@ -5,7 +5,10 @@ var TannenMonthLabel = React.createClass({
   render: function() {
     return (
       <div className='label'>
-        <span className='month'>
+        <span className='small month'>
+          {this.props.current_day.format('MMM')}
+        </span>
+        <span className='medium month'>
           {this.props.current_day.format('MMMM')}
         </span>
         <span className='year'>
