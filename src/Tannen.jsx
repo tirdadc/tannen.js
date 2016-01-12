@@ -66,12 +66,14 @@ var Tannen = React.createClass({
   },
 
   previousClick: function(e) {
+    e.preventDefault();
     this.setState({
       month: this.state.month.clone().subtract(1, this.state.increment)
     })
   },
 
   nextClick: function(e) {
+    e.preventDefault();
     this.setState({
       month: this.state.month.clone().add(1, this.state.increment)
     })
@@ -89,18 +91,18 @@ var Tannen = React.createClass({
     return (
       <div className={'calendar ' + this.state.view_mode} style={{"width" : this.props.width}}>
         <div className='top'>
-          <div
+          <a
+            href='#'
             className='previous'
             onClick={this.previousClick}
-            dangerouslySetInnerHTML={{__html: this.props.previous_label}}>
-            </div>
+            dangerouslySetInnerHTML={{__html: this.props.previous_label}} />
           <div className='reset' onClick={this.resetClick}>Today</div>
           {view_mode_switch}
-          <div
+          <a
+            href='#'
             className='next'
             onClick={this.nextClick}
             dangerouslySetInnerHTML={{__html: this.props.next_label}} />
-
           {main_label}
         </div>
         <TannenWeekdays

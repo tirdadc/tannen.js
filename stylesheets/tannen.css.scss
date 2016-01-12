@@ -1,6 +1,6 @@
 $calendar-border-color: #e0e1e2;
 $out-of-range-date-color: grey;
-
+$top-link-hover-color: #1678c2;
 $event-color: white;
 
 .calendar {
@@ -9,6 +9,13 @@ $event-color: white;
     display: flex;
     div {
       display: inline-block;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        color: $top-link-hover-color;
+      }
     }
     .previous, .next, .reset, .switch_view_mode {
       line-height: 2em;
